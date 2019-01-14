@@ -28,6 +28,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{C7A4A790-1BB3-4D8D-8158-FB1CC5E9E679}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teleport", "Teleport", "{27272495-5D56-4A67-BEF7-F9031479A280}"
+	ProjectSection(SolutionItems) = preProject
+		Teleport\ReadMe.md = Teleport\ReadMe.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{CFEF6261-A7F9-4287-89DA-25CE0B8EA745}"
 EndProject
@@ -51,6 +54,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldDateTime", "WorldDateTime\Server\WorldDateTime.csproj", "{31AF3633-934A-4BDE-A135-0E1A39BCB3AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VehicleManager", "VehicleManager", "{D6DC5680-46F9-42E8-899F-E25FBABC5635}"
+	ProjectSection(SolutionItems) = preProject
+		VehicleManager\Readme.md = VehicleManager\Readme.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{824482D3-A80C-472A-B7F1-3D0C485A00A9}"
 EndProject

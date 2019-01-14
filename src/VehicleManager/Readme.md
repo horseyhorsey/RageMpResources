@@ -34,8 +34,6 @@ You can spawn vehicles and search vehicle classes.
 
 ### <span style="color:orangered">Commands</span>
 
-**These commands are not ACL restricted**
-
 - Help
 
 		<right name="command.vcmd" />
