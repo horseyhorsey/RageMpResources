@@ -26,6 +26,8 @@ All server resources build to **C:/RAGEMP/server-files/bridge/resources/$(Target
 
 Shared and Submodules are built to runtime.
 
+Server projects include **launchsettings.json** for launching server debug.
+
 ### Client
 
 All client scripts build to **C:/RAGEMP/server-files/client__packages/cs_packages/$(TargetName)**

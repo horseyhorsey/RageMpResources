@@ -1,0 +1,12 @@
+<meta>
+  <script src="VehicleManager.dll" description="Manage vehicles on the server" /> 
+ 	<info name="VehicleManager" type="script" description="Manage vehicles on the server"  />
+
+  <settings>
+    <setting name="player_connected" value="true"/>
+    <setting name="default_plate" value="H0R53 1"/>
+  </settings>
+
+  <export class="VehicleManager" function="CreateDriver"/>
+  <export class="VehicleManager" function="SpawnCar"/>
+</meta>
