@@ -10,6 +10,10 @@ Use commands or the interactive button to use NativeUI........ <kbd>M</kbd>
 
 <kbd>M</kbd> isn't set to close the menu. You can close with <kbd>Backspace</kbd> or <kbd>Esc</kbd>
 
+Note debug in Client. If set to false then Chat debug messages are turned off:
+
+	private bool _debug = true;
+
 ---
 
 ## <span style="color:0453a0">Server (Script)</span>
@@ -27,11 +31,11 @@ Use commands or the interactive button to use NativeUI........ <kbd>M</kbd>
 
 - use_setting_skin
 
-	    <setting name="use_setting_skin" value="true" description="Enable Starting skin for player"/>
+	    <setting name="use_setting_skin" value="true" description="Enable Starting skin for client"/>
 
 - skin
 
-	    <setting name="skin" value="mp_freemode_male" description="Enable Starting skin for player"/>
+	    <setting name="skin" value="mp_freemode_male" description="The starting skin for client"/>
 
 - outfit
 
@@ -39,7 +43,7 @@ Use commands or the interactive button to use NativeUI........ <kbd>M</kbd>
 
 - show_on_connect
 
-	    <setting name="show_on_connect" value="24" description="shows selector menu when player connects"/>  
+	    <setting name="show_on_connect" value="true" description="shows selector menu when client connects"/>  
    
 - debug (print chat messages when in debug)
 
