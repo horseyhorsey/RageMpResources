@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "RMP_SkinSelector.Server": {
+      "commandName": "Executable",
+      "executablePath": "C:/RAGEMP//server-files/server.exe",
+      "workingDirectory": "C:/RAGEMP//server-files"
+    }
+  }
+}

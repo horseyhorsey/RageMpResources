@@ -1,0 +1,21 @@
+<meta>
+  <!--This Resource-->
+  <script src="SkinSelector.dll" />
+  <!--resource info-->
+  <info name="SkinSelector" type="script" description="Skin selector by Dave Horsefield"/>
+  <settings>
+    <!--if set true, then use the skin provided-->
+    <setting name="use_setting_skin" value="true" description="Enable Starting skin for player"/>    
+    <!--player model-->
+    <setting name="skin" value="mp_freemode_male" description="Starting skin for player"/>    
+    <!--if player is set to freemode select outfit-->
+    <setting name="outfit" value="24" description="Starting outfit for player"/>
+    <!--shows selector menu when player connects-->
+    <setting name="show_on_connect" value="true"/>
+    <!--show debug chat-->
+    <setting name="debug" value="true"/>
+  </settings>
+  <!--Exported-->
+  <export class="SkinSelector" function="ChangeModel" returns="bool"/>
+  <export class="SkinSelector" function="ChangeOutfit" />
+</meta>
