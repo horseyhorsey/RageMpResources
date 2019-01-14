@@ -1,0 +1,9 @@
+[submodule "modules/RageMpClientBase"]
+	path = modules/RageMpClientBase
+	url = https://github.com/horseyhorsey/RageMpClientBase.git
+[submodule "modules/RageMpBase"]
+	path = modules/RageMpBase
+	url = https://github.com/horseyhorsey/RageMpBase.git
+[submodule "modules/GTAN.Extensions"]
+	path = modules/GTAN.Extensions
+	url = https://github.com/horseyhorsey/GTAN.Extensions.git

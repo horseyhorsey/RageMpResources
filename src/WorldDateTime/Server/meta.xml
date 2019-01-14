@@ -1,0 +1,16 @@
+<meta>
+ <script src="WorldDateTime.dll" /> 
+  
+ <info name="WorldDateTime" type="script" description="World date time"/>
+  
+  <export class="WorldDateTime" function="SetTime" />
+
+  <settings>
+
+    <setting name="time" value="19:00" description="Time of day to start" />
+    <setting name="enable_start_time" value="true" description="Whether to set the time when resource starts" />        
+    <!--Default timer tick Multiplier is * 60000 ms. (minute)-->
+    <setting name="time_multiplier" value="0.2" description="1.0 is real time" />
+    
+  </settings>
+</meta>
