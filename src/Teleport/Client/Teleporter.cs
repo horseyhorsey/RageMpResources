@@ -1,5 +1,6 @@
 ﻿using RAGE;
 using RAGE.Elements;
+using RageMpClientBase;
 using RageMpClientHelpers;
 
 namespace Teleporter
@@ -7,7 +8,7 @@ namespace Teleporter
     /// <summary>
     /// OsFlash
     /// </summary>
-    public class Teleporter : Events.Script
+    public class Teleporter : ScriptBase
     {
         private Player _player;
 
@@ -86,6 +87,7 @@ namespace Teleporter
 
                 CamHelper.SetPlayerLoading(false, 750);
                 ChatHelper.EnableChat(true);
+                NotifyPic($"Teleported to map waypoint. {_player.Position.ToString()}", "Teleport", RageMpClientShared.NotifyChar.CHAR_BLIMP);
             }
             else
             {

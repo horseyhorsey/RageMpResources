@@ -13,7 +13,7 @@
     <!--shows selector menu when player connects-->
     <setting name="show_on_connect" value="true"/>
     <!--show debug chat-->
-    <setting name="debug" value="true"/>
+    <setting name="debug" value="false"/>
   </settings>
   <!--Exported-->
   <export class="SkinSelector" function="ChangeModel" returns="bool"/>
