@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<Platforms>AnyCPU;x64</Platforms>	
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Reference Include="Bootstrapper">
+      <HintPath>C:\RAGEMP\server-files\bridge\runtime\Bootstrapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>  
+	
+  <ItemGroup>
+    <Content Include="..\..\..\..\..\..\..\..\..\..\RAGEMP\server-files\bridge\acl.xml" Link="acl.xml" />
+    <Content Include="C:\RAGEMP\server-files\bridge\settings.xml" Link="settings.xml" />
+  </ItemGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+	<OutputPath>c:\RAGEMP\server-files\resources\$(TargetName)</OutputPath>
+	<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Modules\gtan.extensions\src\GTAN.Extensions\GTAN.Extensions.csproj" />
+    <ProjectReference Include="..\..\..\Modules\RageMpBase\RageMpBase.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Update="Localization\ChatMessages.Designer.cs">
+      <DependentUpon>ChatMessages.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Update="Localization\ChatMessages.resx">
+      <LastGenOutput>ChatMessages.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="meta.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if not exist &quot;C:/RAGEMP/server-files\bridge\resources\$(TargetName)&quot; mkdir &quot;C:/RAGEMP\server-files\bridge\resources\$(TargetName)&quot;&#xD;&#xA;if not exist &quot;C:/RAGEMP/server-files\resources\$(TargetName)&quot; mkdir &quot;C:/RAGEMP/\server-files\resources\$(TargetName)&quot;&#xD;&#xA;xcopy /E /Y /R &quot;$(TargetDir)meta.xml&quot; &quot;C:\RAGEMP\server-files\bridge\resources\$(TargetName)\&quot;&#xD;&#xA;xcopy /E /Y /R &quot;$(TargetDir)$(TargetName).dll&quot; &quot;C:\RAGEMP\server-files\bridge\resources\$(TargetName)\&quot;&#xD;&#xA;xcopy /E /Y /R &quot;$(TargetDir)$(TargetName).pdb&quot; &quot;C:\RAGEMP\server-files\bridge\resources\$(TargetName)\&quot;" />
+  </Target>
+
+</Project>

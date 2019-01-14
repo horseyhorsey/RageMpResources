@@ -1,0 +1,12 @@
+<meta>
+ <script src="Admin.dll" description="Server administration. Based on RAGEMP example" /> 
+  
+ 	<info name="Admin" type="script" description="Server administration"  />
+
+  <export class="Admin" function="PlayerConnected"/>
+
+  <settings>
+    <setting name="SetGlobalDefaultCommandMessages" value="true"/>
+  </settings>
+  
+</meta>

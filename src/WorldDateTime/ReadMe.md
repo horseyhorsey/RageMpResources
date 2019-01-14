@@ -16,6 +16,15 @@ Adjust **meta.xml** settings for start times and time speed.
 
 ## <span style="color:0453a0">Server (Script)</span>
 
+### Settings.xml example:
+
+	<?xml version="1.0"?>
+	<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	  <acl_enabled>true</acl_enabled>
+	  <log_console>false</log_console>
+	  <resource src="WorldDateTime"></resource>
+	</config>
+
 ### <span style="color:orangered">Resource Settings</span>
 
 - Time to start game on
