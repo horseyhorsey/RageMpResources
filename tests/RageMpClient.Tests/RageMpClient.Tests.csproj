@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Bootstrapper">
+      <HintPath>C:\RAGEMP\server-files\bridge\runtime\Bootstrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="NeoSmart.Hashing">
+      <HintPath>C:\RAGEMP\dotnet\NeoSmart.Hashing.dll</HintPath>
+    </Reference>
+    <Reference Include="xxHash">
+      <HintPath>C:\RAGEMP\dotnet\xxHash.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
