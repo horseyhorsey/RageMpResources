@@ -1,0 +1,19 @@
+<meta>
+  
+  <script src="XpLevel.dll" /> 
+ 	<info name="XpLevel" type="script" description="Manages the players XP the same as GTAO. rootcause"/> 
+
+  <!--//var currentLevel = lvl[0];
+  //var prevXp = lvl[1]; var currentXP = lvl[2];
+  //var limit = lvl[3]; var nextLimit = lvl[4];-->
+
+  <settings>            
+    <setting name="on_connected" value="true" description="Initializes player OnPlayerConnected"/>    
+  </settings>
+
+  <!--A call to InitPlayer will SetXp-->
+  <export class="LevelManager" function="InitPlayer"/> <!--Expects CurrentXP-->
+      
+  <export class="LevelManager" function="AddXp"/>  <!--AddXp(int amount)-->
+  <export class="LevelManager" function="SetXp"/>  <!--SetXp(int amount)-->
+</meta>
