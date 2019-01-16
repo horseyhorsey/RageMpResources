@@ -20,6 +20,10 @@
 
 ## Build
 
+This repo relies on sub modules to keep the bread and butter helpers out of the resources.
+
+	git submodule update --recursive --remote
+
 ### Server
 
 All server resources build to **C:/RAGEMP/server-files/bridge/resources/$(TargetName)**

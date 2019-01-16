@@ -148,7 +148,7 @@ namespace XpLevel
             if (_onConnected)
             {
                 Log($"client connected: {client.Name}. Setting 0 levels/Xp");
-                InitPlayer(client, 10);
+                InitPlayer(client, 0);
             }
             else
                 Log($"client connected");                

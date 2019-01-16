@@ -33,7 +33,7 @@ The `Client` receives the `PLY_LEVEL` as a hashed value `4930075823048855057` (s
 - <!--    When this is used in a gamemode you might want to switch this off and call InitPlayer-->
 
 		<setting name="on_connected" value="true" 
-				 description="Time of day to start" />
+				 description="InitPlayer when player connects" />
 
 ### <span style="color:orangered">Exported Functions</span>
 
