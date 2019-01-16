@@ -62,6 +62,16 @@ Note debug in Client. If set to false then Chat debug messages are turned off:
 
 		<right name="command.outfit" />
 
+### <span style="color:orangered">Remote Events</span>
+
+- ClientMenuClosed (client, args)
+
+		This remote event expects the model hash. The Client menu invokes this when just closed
+
+- ChangeOutfit (client, args)
+
+		See `ChangeOutfit` remote which expects an `OutFitId` 
+
 
 ### <span style="color:orangered">Exported Functions</span>
 
