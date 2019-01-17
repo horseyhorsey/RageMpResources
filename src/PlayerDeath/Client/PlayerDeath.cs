@@ -69,6 +69,10 @@ namespace PlayerDeath.Client
                     Events.Tick += OnTick;
                 }
             }
+            else
+            {
+                Events.CallRemote("WastedScreenFinished");
+            }
         }
 
         /// <summary>
