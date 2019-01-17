@@ -1,0 +1,21 @@
+<meta>
+  <script src="PlayerDeath.dll" />  
+  <info name="PlayerDeath" type="script" description="Manage player spawns and deaths"/>
+
+  <settings>
+
+    <setting name="spawn_connected" value="true" description="enables spawning when player connects"/>
+    <setting name="respawn_death"   value="false" description="enables auto respawning when player dies"/>
+    
+    <!--Spawn center of map by default, makes a change from Temple Mount - Use empty string for RAGEMP default-->
+    <setting name="spawn_location" value="-83.71489 -105.2238 56.88356" description="set the default spawn location"/>
+    
+    <setting name="wasted_enabled" value="true" description="Show wasted screen" />
+    <setting name="wasted_duration" value="2000" description="Duration of wasted screen??" />
+    <setting name="wasted_title" value="Wasted" description="Wasted title in Red" />
+    <setting name="wasted_message" value="Owned" description="Wasted message" />
+
+    <setting name="notify_death" value="true" description="Send a notification to players death reasons"/>
+  </settings>
+
+</meta>
