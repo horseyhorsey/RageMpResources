@@ -1,0 +1,16 @@
+<meta>
+ <script src="Money.dll" /> 
+ 	<info name="Money" type="gamemode" description="Manages player cash and displays in the menu and on screen. Credit Rootcause"/>
+  
+  <settings>
+    <setting name="on_connected" value="true" description="Initializes player OnPlayerConnected"/>
+    <setting name="display_cash" value="true" description="Display cash when resource loaded"/>
+  </settings>
+
+
+  <!--Show cash hud?-->
+  <export class="Money" function="AddCash"/>
+  <export class="Money" function="DisplayCash"/>  
+  <export class="Money" function="GetCash"/>
+  
+</meta>
