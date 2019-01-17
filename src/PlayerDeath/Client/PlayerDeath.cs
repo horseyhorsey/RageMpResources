@@ -14,6 +14,7 @@ namespace PlayerDeath.Client
         private int _wastedDuration;
         private string _wastedTitle;
         private string _wastedMessage;
+        private float _wastedTimeScale;
         private Scaleform _wastedScaleformMsg;
         #endregion 
 
@@ -43,6 +44,7 @@ namespace PlayerDeath.Client
             _wastedDuration = (int)args[1];
             _wastedTitle = args[2].ToString();
             _wastedMessage = args[3].ToString();
+            _wastedTimeScale = (float)args[4];
 
             //Create scaleform for wasted message
             if (_wastedEnabled)
@@ -64,7 +66,7 @@ namespace PlayerDeath.Client
                 if (_wastedScaleformMsg != null)
                 {
                     this.timeStarted = RAGE.Game.Misc.GetGameTimer();
-                    PlayerHelper.WastedStart();
+                    PlayerHelper.WastedStart(_wastedTimeScale);
                     Events.Tick -= OnTick;
                     Events.Tick += OnTick;
                 }

@@ -15,6 +15,7 @@ namespace PlayerDeath.Server
         private string _wastedTitle;
         private string _wastedMessage;
         private int _wastedDuration;
+        private float _wastedTimeScale;
         private bool _notify_death;
         #endregion
 
@@ -56,6 +57,7 @@ namespace PlayerDeath.Server
                 _wastedTitle = NAPI.Resource.GetSetting<string>(this, "wasted_title");
                 _wastedMessage = NAPI.Resource.GetSetting<string>(this, "wasted_message");
                 _wastedDuration = NAPI.Resource.GetSetting<int>(this, "wasted_duration");
+                _wastedTimeScale = NAPI.Resource.GetSetting<float>(this, "wasted_timescale");
                 _notify_death = NAPI.Resource.GetSetting<bool>(this, "notify_death");
             }
         }
@@ -84,7 +86,7 @@ namespace PlayerDeath.Server
         public void OnPlayerConnected(Client client)
         {
             NAPI.ClientEvent.TriggerClientEvent(client, "InitSettings",
-                _wastedEnabled, _wastedDuration, _wastedTitle, _wastedMessage);
+                _wastedEnabled, _wastedDuration, _wastedTitle, _wastedMessage, _wastedTimeScale);
         }
         #endregion
 

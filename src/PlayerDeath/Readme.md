@@ -37,6 +37,7 @@ This resource displays a wasted screen when player dies. The message and duratio
     <setting name="wasted_duration" value="2000" description="Duration of wasted screen. Not really 2 seconds but a bit longer" />
     <setting name="wasted_title" value="Wasted" description="Title" />
     <setting name="wasted_message" value="Owned" description="Message" />
+	<setting name="wasted_timescale" value="0.2" description="Time scale, bullet time" />
 
     <setting name="notify_death" value="true" description="Send a notification to players with death reasons"/>
 
@@ -62,4 +63,4 @@ n/a
 
 When a client connects on the server the wasted settings are sent.
 
-    _wastedEnabled, _wastedDuration,_wastedTitle, _wastedMessage
+    _wastedEnabled, _wastedDuration,_wastedTitle, _wastedMessage, _wastedTimeScale

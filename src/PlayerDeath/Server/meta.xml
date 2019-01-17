@@ -14,6 +14,7 @@
     <setting name="wasted_duration" value="2000" description="Duration of wasted screen??" />
     <setting name="wasted_title" value="Wasted" description="Wasted title in Red" />
     <setting name="wasted_message" value="Owned" description="Wasted message" />
+    <setting name="wasted_timescale" value="0.2" description="Time scale, bullet time" />
 
     <setting name="notify_death" value="true" description="Send a notification to players death reasons"/>
   </settings>
