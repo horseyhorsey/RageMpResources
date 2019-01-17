@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Timecycle</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MyFirstScript.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\modules\RageMpClientBase\src\RageMpClientHelpers\RageMpClientHelpers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/RAGEMP/\dotnet\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="rage-sharp">
+      <HintPath>C:/RAGEMP/\dotnet\rage-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">    
+  <Exec Command="if not exist &quot;C:/RAGEMP//server-files\client_packages\cs_packages\$(TargetName)&quot; mkdir &quot;C:/RAGEMP/\server-files\client_packages\cs_packages\$(TargetName)&quot;&#xD;&#xA;xcopy /E /Y /R &quot;$(ProjectDir)*.cs&quot; &quot;C:/RAGEMP//server-files\client_packages\cs_packages\$(TargetName)&quot;&#xD;&#xA;RD /S /Q &quot;C:/RAGEMP//server-files\client_packages\cs_packages\$(TargetName)\bin&quot;&#xD;&#xA;RD /S /Q &quot;C:/RAGEMP//server-files\client_packages\cs_packages\$(TargetName)\obj&quot;" />
+  </Target>
+
+</Project>
