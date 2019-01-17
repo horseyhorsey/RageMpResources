@@ -22,6 +22,12 @@
 
 This repo relies on sub modules to keep the bread and butter helpers out of the resources.
 
+Initial pull:
+
+	git submodule update --init
+
+To update:
+
 	git submodule update --recursive --remote
 
 ### Server
