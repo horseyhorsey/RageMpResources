@@ -2,7 +2,6 @@
 using RAGE.Game;
 using RageMpClientHelpers;
 using RageMpClientShared;
-using RageMpHelper;
 using System;
 using System.Collections.Generic;
 
@@ -33,12 +32,12 @@ namespace ScreenFx
             {                
                 if (!_on)
                 {
-                    _on = true;                    
+                    _on = true;
                     GfxHelper.ScreenFxStart(_currEffect);
                 }
                 else
                 {
-                    GfxHelper.ScreenFxStop(_currEffect);
+                    GfxHelper.ScreenFxStop(_currEffect);                    
                     _on = false;
                 }
 
@@ -54,7 +53,7 @@ namespace ScreenFx
             {
                 _index++;
                 UpdateIndex();
-            }                
+            }
         }
 
         private void UpdateIndex()
