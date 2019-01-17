@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdvancedRifle" xml:space="preserve">
+    <value>AdvancedRifle</value>
+  </data>
+  <data name="AirstrikeRocket" xml:space="preserve">
+    <value>struck by Airstrike</value>
+  </data>
+  <data name="Animal" xml:space="preserve">
+    <value>beasted</value>
+  </data>
+  <data name="APPistol" xml:space="preserve">
+    <value>APPistol</value>
+  </data>
+  <data name="AssaultRifle" xml:space="preserve">
+    <value>AssaultRifle</value>
+  </data>
+  <data name="AssaultShotgun" xml:space="preserve">
+    <value>AssaultShotgun</value>
+  </data>
+  <data name="AssaultSMG" xml:space="preserve">
+    <value>AssaultSMG</value>
+  </data>
+  <data name="Ball" xml:space="preserve">
+    <value>Ball</value>
+  </data>
+  <data name="BarbedWire" xml:space="preserve">
+    <value>barbed wire</value>
+  </data>
+  <data name="Bat" xml:space="preserve">
+    <value>Bat</value>
+  </data>
+  <data name="BattleAxe" xml:space="preserve">
+    <value>BattleAxe</value>
+  </data>
+  <data name="Bleeding" xml:space="preserve">
+    <value>Bleeding</value>
+  </data>
+  <data name="Bottle" xml:space="preserve">
+    <value>Bottle</value>
+  </data>
+  <data name="Briefcase" xml:space="preserve">
+    <value>Briefcase</value>
+  </data>
+  <data name="Briefcase02" xml:space="preserve">
+    <value>Briefcase02</value>
+  </data>
+  <data name="BullpupRifle" xml:space="preserve">
+    <value>BullpupRifle</value>
+  </data>
+  <data name="BullpupShotgun" xml:space="preserve">
+    <value>BullpupShotgun</value>
+  </data>
+  <data name="BZGas" xml:space="preserve">
+    <value>BZGas</value>
+  </data>
+  <data name="CarbineRifle" xml:space="preserve">
+    <value>CarbineRifle</value>
+  </data>
+  <data name="CombatMG" xml:space="preserve">
+    <value>CombatMG</value>
+  </data>
+  <data name="CombatPDW" xml:space="preserve">
+    <value>CombatPDW</value>
+  </data>
+  <data name="CombatPistol" xml:space="preserve">
+    <value>CombatPistol</value>
+  </data>
+  <data name="CompactGrenadeLauncher" xml:space="preserve">
+    <value>CompactGrenadeLauncher</value>
+  </data>
+  <data name="CompactRifle" xml:space="preserve">
+    <value>CompactRifle</value>
+  </data>
+  <data name="Cougar" xml:space="preserve">
+    <value>Cougar</value>
+  </data>
+  <data name="Crowbar" xml:space="preserve">
+    <value>Crowbar</value>
+  </data>
+  <data name="Dagger" xml:space="preserve">
+    <value>Stabbed</value>
+  </data>
+  <data name="DoubleBarrelShotgun" xml:space="preserve">
+    <value>DoubleBarrelShotgun</value>
+  </data>
+  <data name="Drowning" xml:space="preserve">
+    <value>Drowning</value>
+  </data>
+  <data name="DrowningInVehicle" xml:space="preserve">
+    <value>DrowningInVehicle</value>
+  </data>
+  <data name="ElectricFence" xml:space="preserve">
+    <value>ElectricFence</value>
+  </data>
+  <data name="Exhaustion" xml:space="preserve">
+    <value>Exhaustion</value>
+  </data>
+  <data name="Explosion" xml:space="preserve">
+    <value>Explosion</value>
+  </data>
+  <data name="Fall" xml:space="preserve">
+    <value>Fall</value>
+  </data>
+  <data name="Fire" xml:space="preserve">
+    <value>Fire</value>
+  </data>
+  <data name="FireExtinguisher" xml:space="preserve">
+    <value>FireExtinguisher</value>
+  </data>
+  <data name="Firework" xml:space="preserve">
+    <value>Firework</value>
+  </data>
+  <data name="Flare" xml:space="preserve">
+    <value>Flare</value>
+  </data>
+  <data name="FlareGun" xml:space="preserve">
+    <value>FlareGun</value>
+  </data>
+  <data name="Flashlight" xml:space="preserve">
+    <value>Flashlight</value>
+  </data>
+  <data name="GolfClub" xml:space="preserve">
+    <value>GolfClub</value>
+  </data>
+  <data name="Grenade" xml:space="preserve">
+    <value>Grenade</value>
+  </data>
+  <data name="GrenadeLauncher" xml:space="preserve">
+    <value>GrenadeLauncher</value>
+  </data>
+  <data name="GrenadeLauncherSmoke" xml:space="preserve">
+    <value>GrenadeLauncherSmoke</value>
+  </data>
+  <data name="Gusenberg" xml:space="preserve">
+    <value>Gusenberg</value>
+  </data>
+  <data name="Hammer" xml:space="preserve">
+    <value>Hammer</value>
+  </data>
+  <data name="Hatchet" xml:space="preserve">
+    <value>Hatchet</value>
+  </data>
+  <data name="HeavyPistol" xml:space="preserve">
+    <value>HeavyPistol</value>
+  </data>
+  <data name="HeavyShotgun" xml:space="preserve">
+    <value>HeavyShotgun</value>
+  </data>
+  <data name="HeavySniper" xml:space="preserve">
+    <value>HeavySniper</value>
+  </data>
+  <data name="HeliCrash" xml:space="preserve">
+    <value>HeliCrash</value>
+  </data>
+  <data name="HitByWaterCannon" xml:space="preserve">
+    <value>HitByWaterCannon</value>
+  </data>
+  <data name="HomingLauncher" xml:space="preserve">
+    <value>HomingLauncher</value>
+  </data>
+  <data name="Knife" xml:space="preserve">
+    <value>Knife</value>
+  </data>
+  <data name="KnuckleDuster" xml:space="preserve">
+    <value>KnuckleDuster</value>
+  </data>
+  <data name="Machete" xml:space="preserve">
+    <value>Machete</value>
+  </data>
+  <data name="MachinePistol" xml:space="preserve">
+    <value>MachinePistol</value>
+  </data>
+  <data name="MarksmanPistol" xml:space="preserve">
+    <value>MarksmanPistol</value>
+  </data>
+  <data name="MarksmanRifle" xml:space="preserve">
+    <value>MarksmanRifle</value>
+  </data>
+  <data name="MG" xml:space="preserve">
+    <value>MG</value>
+  </data>
+  <data name="MicroSMG" xml:space="preserve">
+    <value>MicroSMG</value>
+  </data>
+  <data name="Minigun" xml:space="preserve">
+    <value>Minigun</value>
+  </data>
+  <data name="MiniSMG" xml:space="preserve">
+    <value>MiniSMG</value>
+  </data>
+  <data name="Molotov" xml:space="preserve">
+    <value>Molotov</value>
+  </data>
+  <data name="Musket" xml:space="preserve">
+    <value>Musket</value>
+  </data>
+  <data name="Nightstick" xml:space="preserve">
+    <value>Nightstick</value>
+  </data>
+  <data name="NightVision" xml:space="preserve">
+    <value>NightVision</value>
+  </data>
+  <data name="Parachute" xml:space="preserve">
+    <value>Parachute</value>
+  </data>
+  <data name="PetrolCan" xml:space="preserve">
+    <value>PetrolCan</value>
+  </data>
+  <data name="PipeBomb" xml:space="preserve">
+    <value>PipeBomb</value>
+  </data>
+  <data name="Pistol" xml:space="preserve">
+    <value>Pistol</value>
+  </data>
+  <data name="Pistol50" xml:space="preserve">
+    <value>Pistol50</value>
+  </data>
+  <data name="PoolCue" xml:space="preserve">
+    <value>PoolCue</value>
+  </data>
+  <data name="ProximityMine" xml:space="preserve">
+    <value>ProximityMine</value>
+  </data>
+  <data name="PumpShotgun" xml:space="preserve">
+    <value>PumpShotgun</value>
+  </data>
+  <data name="Railgun" xml:space="preserve">
+    <value>Railgun</value>
+  </data>
+  <data name="RammedByCar" xml:space="preserve">
+    <value>Car Rammed</value>
+  </data>
+  <data name="Revolver" xml:space="preserve">
+    <value>Revolver</value>
+  </data>
+  <data name="RPG" xml:space="preserve">
+    <value>RPG</value>
+  </data>
+  <data name="RunOverByCar" xml:space="preserve">
+    <value>Run Over</value>
+  </data>
+  <data name="SawnOffShotgun" xml:space="preserve">
+    <value>SawnOffShotgun</value>
+  </data>
+  <data name="SMG" xml:space="preserve">
+    <value>SMG</value>
+  </data>
+  <data name="SmokeGrenade" xml:space="preserve">
+    <value>SmokeGrenade</value>
+  </data>
+  <data name="SniperRifle" xml:space="preserve">
+    <value>SniperRifle</value>
+  </data>
+  <data name="Snowball" xml:space="preserve">
+    <value>Snowball</value>
+  </data>
+  <data name="SNSPistol" xml:space="preserve">
+    <value>SNSPistol</value>
+  </data>
+  <data name="SpecialCarbine" xml:space="preserve">
+    <value>SpecialCarbine</value>
+  </data>
+  <data name="StickyBomb" xml:space="preserve">
+    <value>StickyBomb</value>
+  </data>
+  <data name="StunGun" xml:space="preserve">
+    <value>StunGun</value>
+  </data>
+  <data name="SweeperShotgun" xml:space="preserve">
+    <value>SweeperShotgun</value>
+  </data>
+  <data name="SwitchBlade" xml:space="preserve">
+    <value>SwitchBlade</value>
+  </data>
+  <data name="Unarmed" xml:space="preserve">
+    <value>Unarmed</value>
+  </data>
+  <data name="VehicleRocket" xml:space="preserve">
+    <value>VehicleRocket</value>
+  </data>
+  <data name="VintagePistol" xml:space="preserve">
+    <value>VintagePistol</value>
+  </data>
+  <data name="Wrench" xml:space="preserve">
+    <value>Wrench</value>
+  </data>
+</root>

@@ -23,7 +23,8 @@ namespace PlayerDeath.Server
         #endregion
 
         public PlayerDeath()
-        {            
+        {
+            Log($"death reasons count: {DeathDicts.DeathReasons.Count}");
         }
 
         #region Server Events

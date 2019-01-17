@@ -27,6 +27,21 @@
   </ItemGroup>
   
   <ItemGroup>
+    <Compile Update="DeathStrings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>deathstrings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Update="deathstrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>deathstrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+  <ItemGroup>
     <None Update="meta.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
