@@ -120,7 +120,7 @@ namespace Money
         {
             bool.TryParse(args[0].ToString(), out var display);
             CurrentPlayer.SetData("DISPLAY_CASH", display);
-            Chat.Output($"display cash {CurrentPlayer.GetData<bool>("DISPLAY_CASH")}");
+            //Chat.Output($"display cash {CurrentPlayer.GetData<bool>("DISPLAY_CASH")}");
         }
 
         /// <summary>

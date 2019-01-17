@@ -23,7 +23,6 @@ namespace Timecycle
         {
             if (Pad.IsControlJustPressed(0, (int)Control.ReplayStartStopRecordingSecondary))
             {
-                UiHelper.ShowSubtitle("key pressed", 1000);
                 if (!_on)
                 {
                     _on = true;
@@ -40,8 +39,7 @@ namespace Timecycle
             {
                 _index--;
                 UpdateIndex();
-            }
-                
+            }                
             else if (Pad.IsControlJustPressed(0, (int)Control.PhoneRight))
             {
                 _index++;
