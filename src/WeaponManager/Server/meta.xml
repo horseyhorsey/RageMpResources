@@ -1,0 +1,9 @@
+<meta>
+  <script src="WeaponManager.dll" />
+  <info name="WeaponManager" type="gamemode" description="metadescription"/>
+
+  <settings>
+    <setting name="my_settings" value="69" description="Example number" />
+  </settings>
+  
+</meta>
