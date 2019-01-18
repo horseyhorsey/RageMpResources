@@ -14,7 +14,7 @@
   </ItemGroup>  
 	
   <ItemGroup>
-    <Content Include="..\..\..\..\..\..\..\..\..\..\RAGEMP\server-files\bridge\acl.xml" Link="acl.xml" />
+    <Content Include="C:\RAGEMP\server-files\bridge\acl.xml" Link="acl.xml" />
     <Content Include="C:\RAGEMP\server-files\bridge\settings.xml" Link="settings.xml" />
   </ItemGroup>
   
