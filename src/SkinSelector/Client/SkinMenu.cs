@@ -31,7 +31,7 @@ namespace SkinSelectorClient
         /// <summary>
         /// Outfits. 0 - 1483
         /// </summary>
-        private UIMenuListItem _outfits;        
+        private UIMenuListItem _outfits;
         /// <summary>
         /// Selected MP outfit
         /// </summary>
@@ -39,11 +39,25 @@ namespace SkinSelectorClient
         /// <summary>
         /// Set some chat messages to only show debug.
         /// </summary>
-        private bool _debug = true;
+        private bool _debug = false;
+
+        /// <summary>
+        /// Example using instruction button
+        /// </summary>
+        private Scaleform _instructionLayer;
+
         /// <summary>
         /// Selected model when selected
         /// </summary>
         uint SelectedModelHash { get; set; }
+
+        /// <summary>
+        /// Collection of instruction buttons to display
+        /// </summary>
+        Dictionary<string, string> KeyValuePairs = new Dictionary<string, string>
+        {
+            { Pad.GetControlInstructionalButton(2, (int)Control.InteractionMenu, true), "Skin Menu"},
+        };
         #endregion
 
         #region Constructors
@@ -56,6 +70,8 @@ namespace SkinSelectorClient
             InitializePedTypesList();
             MainMenu.OnMenuChange += MainMenu_OnMenuChange;
             RefreshIndex();
+
+            _instructionLayer = ScaleformHelper.InstructionalButtons(KeyValuePairs);
 
             //Show character selection when activated from server or local
             Events.Add("ShowSkinSelector", OnShowSkinSelector);
@@ -80,6 +96,11 @@ namespace SkinSelectorClient
                 {
                     if (!MenuPool.IsAnyMenuOpen())
                     {
+                        if (_instructionLayer != null)
+                        {
+                            _instructionLayer.Dispose();
+                            _instructionLayer = null;
+                        }
                         OnShowSkinSelector(null);
                     }
                 }
@@ -90,6 +111,23 @@ namespace SkinSelectorClient
             if (MenuPool.IsAnyMenuOpen())
             {
                 MenuPool.ProcessMenus();
+            }
+            else
+            {
+                if (_instructionLayer != null)
+                {
+
+                    int x = 0; int y = 0;
+                    RAGE.Game.Graphics.GetScreenResolution(ref x, ref y);
+                    var size = new System.Drawing.Point(x, y);
+
+                    //Needs minus values if you want to move the buttons elsewhere on screen
+                    //var point = new System.Drawing.Point(-(int)(x * 0.9), -(int)(y * 0.5));
+
+                    //Should be bottom right
+                    var point = new System.Drawing.Point(0, 0);
+                    _instructionLayer.Render2DScreenSpace(point, size);
+                }
             }
         }
 
@@ -116,6 +154,7 @@ namespace SkinSelectorClient
             ChatHelper.EnableChat(true);
             UiHelper.EnableHuds();
 
+            _instructionLayer = ScaleformHelper.InstructionalButtons(KeyValuePairs);
             if (_debug)
                 Chat.Output("Skin selector Menu closed");
         }
@@ -251,8 +290,7 @@ namespace SkinSelectorClient
             Vector3 position = new Vector3(_ply.Position.X, _ply.Position.Y, _ply.Position.Z);
             var ply = RAGE.Elements.Player.LocalPlayer;
             ply.Position = position;
-
-            ply.SetHeading(343f);
+            ply.SetHeading(343f);            
 
             UiHelper.EnableHuds(false, false);
 
